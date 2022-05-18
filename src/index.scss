@@ -1,0 +1,114 @@
+
+:root{
+ --mc:#1ab9a7;
+ --gc:#f3f3f3;
+}
+
+.row{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--mc);
+}
+
+.form-control:focus {
+    border-color: var(--mc);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px var(--mc);
+  }
+
+.Survey{
+    font-family: 'Open Sans',Arial,sans-serif;
+
+    .Survey_Container{
+        background-color: #fff;
+        width: 600px;
+        height: 450px;
+        margin-block-start: 60px;
+        position: relative;
+        border-radius: 15px;
+        
+     .Survey_Progress{
+        background-color: var(--gc);
+        padding-block: 20px;
+        padding-inline: 10px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+         .progress-bar{
+            background-color: var(--mc) !important;
+        }
+    }
+    
+    .progress_Footer{
+        background-color: var(--gc);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        border-bootm-left-radius: 15px;
+        border-bootm-right-radius: 15px;
+        .btn{
+            border-color: var(--mc);
+            padding: 10px 20px;
+            border-radius: 10px;
+            transition:background-color .5;
+            outline: none !important;
+            &:hover{
+                background-color: var(--mc);
+                color: #fff;
+            }
+        }
+        div{
+            padding-block: 10px;
+        }
+    }
+
+    }
+}
+
+h3.QuestionStyle,label.QuestionStyle{
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+
+
+// .Survey_Container::after{
+//     content: '';
+//     position: absolute;
+//     top:0;
+//     left:0;
+//     width:0;
+//     height: 8px;
+//     background-color: #111;
+//     transition:width 1s ;
+// }
+
+// .Survey_Container::before{
+//     content: '';
+//     position: absolute;
+//     top:0;
+//     left:0;
+//     width:8px;
+//     height: 0;
+//     background-color: #111;
+//     transition:height 1s ;
+// }
+
+// .Survey_Container:hover::after{
+//     width: 100%;
+// }
+
+// .Survey_Container:hover::before{
+//     height: 100%;
+// }

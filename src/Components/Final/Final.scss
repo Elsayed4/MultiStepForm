@@ -1,0 +1,46 @@
+
+.Final{
+    i{
+        font-size: 60px;
+        color: var(--mc);
+    }
+    
+    button{
+        color: var(--mc);
+        border:2px solid var(--mc);
+        border-radius: 5px;
+        font-size: 18px;
+        padding: 10px 35px;
+        text-decoration: none;
+        z-index: 1;
+        position: relative;
+        &:hover{
+            color: #fff;
+            &:after{
+             width: 100%;
+            }
+         }         
+    &:after{
+        content:'';
+        position: absolute;
+        width: 0;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom:0;
+        background-color: var(--mc);
+        transition:width .5s ease-in-out;
+        z-index: -1;
+        }
+        
+    }
+                
+}
+
+
+
+
+
+
+ 
